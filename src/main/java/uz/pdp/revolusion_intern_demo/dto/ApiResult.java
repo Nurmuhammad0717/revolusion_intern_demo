@@ -1,4 +1,4 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +15,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class RoomDTO implements Serializable {
     private Long id;
-    private Long hotelIdId;
+    private Long hotelId;
     private Boolean isBusy;
     private RoomTypeEnum roomType;
     private Integer roomNumber;

@@ -1,8 +1,8 @@
 package uz.pdp.revolusion_intern_demo.service;
 
-import uz.pdp.revolusion_intern_demo.payload.ApiResult;
-import uz.pdp.revolusion_intern_demo.payload.HotelCrudDTO;
-import uz.pdp.revolusion_intern_demo.payload.HotelDTO;
+import uz.pdp.revolusion_intern_demo.dto.ApiResult;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.HotelCrudDTO;
+import uz.pdp.revolusion_intern_demo.dto.HotelDTO;
 
 import java.util.List;
 

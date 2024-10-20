@@ -1,4 +1,4 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,8 +16,8 @@ import java.util.Date;
 @NoArgsConstructor
 public class OrderDTO implements Serializable {
     private Long id;
-    private Long userIdId;
-    private Long roomIdId;
+    private Long userId;
+    private Long roomId;
     private Date startDate;
     private Date endDate;
     private OrderStatusEnum orderStatus;

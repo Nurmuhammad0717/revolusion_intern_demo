@@ -1,5 +1,6 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto.crudDTOs;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,9 +15,18 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RoomCrudDTO implements Serializable {
-    private Long hotelIdId;
+    @NotNull
+    private Long hotelId;
+
+    @NotNull
     private Boolean isBusy;
+
+    @NotNull
     private RoomTypeEnum roomType;
+
+    @NotNull
     private Integer roomNumber;
+
+    @NotNull
     private Double price;
 }

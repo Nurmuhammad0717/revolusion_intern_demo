@@ -5,8 +5,8 @@ import org.mapstruct.MappingConstants;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.ReportingPolicy;
 import uz.pdp.revolusion_intern_demo.entity.Room;
-import uz.pdp.revolusion_intern_demo.payload.RoomCrudDTO;
-import uz.pdp.revolusion_intern_demo.payload.RoomDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.RoomCrudDTO;
+import uz.pdp.revolusion_intern_demo.dto.RoomDTO;
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public interface RoomMapper {
 
     Room toEntity(RoomCrudDTO crudDTO);
 
-    List<RoomDTO> toDto(List<Room> hotels);
+    List<RoomDTO> toDto(List<Room> rooms);
 
     void update(@MappingTarget Room room, RoomCrudDTO crudDTO);
 

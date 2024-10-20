@@ -14,10 +14,10 @@ import uz.pdp.revolusion_intern_demo.entity.templates.AbsLongEntity;
 public class Rate extends AbsLongEntity {
 
     @ManyToOne
-    private User userId;
+    private User user;
 
     @ManyToOne
-    private Room roomId;
+    private Room room;
 
     private String description;
 

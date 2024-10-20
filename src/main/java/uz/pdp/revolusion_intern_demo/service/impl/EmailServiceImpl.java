@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 
 import uz.pdp.revolusion_intern_demo.entity.CodeEntity;
 import uz.pdp.revolusion_intern_demo.exception.RestException;
-import uz.pdp.revolusion_intern_demo.payload.ApiResult;
-import uz.pdp.revolusion_intern_demo.payload.UserDTO;
+import uz.pdp.revolusion_intern_demo.dto.ApiResult;
+import uz.pdp.revolusion_intern_demo.dto.UserDTO;
 import uz.pdp.revolusion_intern_demo.repository.CodeEntityRepository;
 import uz.pdp.revolusion_intern_demo.service.EmailService;
 

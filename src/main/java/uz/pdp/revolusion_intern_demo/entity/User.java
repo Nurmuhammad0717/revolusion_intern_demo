@@ -11,8 +11,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import uz.pdp.revolusion_intern_demo.entity.templates.AbsLongEntity;
 import uz.pdp.revolusion_intern_demo.enums.RoleEnum;
 
-
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -35,12 +33,12 @@ public class User extends AbsLongEntity implements UserDetails {
 
     private boolean enable;
 
+
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        if (role == null) {
-            return new ArrayList<>();
-        }
-        return List.of(new SimpleGrantedAuthority(role.name()));
+        String Role = "ROLE_";
+        return List.of(new SimpleGrantedAuthority(Role+role.name()));
     }
 
     @Override

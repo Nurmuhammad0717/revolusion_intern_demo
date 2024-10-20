@@ -1,5 +1,6 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto.crudDTOs;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,10 +13,15 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RateDTO implements Serializable {
-    private Long id;
-    private Long userIdId;
-    private Long roomIdId;
+public class RateCrudDTO implements Serializable {
+
+    @NotNull
+    private Long userId;
+
+    @NotNull
+    private Long roomId;
+
     private String description;
+
     private Integer rate;
 }

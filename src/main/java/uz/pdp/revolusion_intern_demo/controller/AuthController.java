@@ -3,7 +3,11 @@ package uz.pdp.revolusion_intern_demo.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import uz.pdp.revolusion_intern_demo.payload.*;
+import uz.pdp.revolusion_intern_demo.dto.*;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.CodeDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.ResetPasswordDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.SignInDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.SignUpDTO;
 import uz.pdp.revolusion_intern_demo.service.AuthService;
 import uz.pdp.revolusion_intern_demo.utils.AppConstant;
 

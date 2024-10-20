@@ -1,8 +1,8 @@
 package uz.pdp.revolusion_intern_demo.service;
 
-import uz.pdp.revolusion_intern_demo.payload.ApiResult;
-import uz.pdp.revolusion_intern_demo.payload.RoomCrudDTO;
-import uz.pdp.revolusion_intern_demo.payload.RoomDTO;
+import uz.pdp.revolusion_intern_demo.dto.ApiResult;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.RoomCrudDTO;
+import uz.pdp.revolusion_intern_demo.dto.RoomDTO;
 
 import java.util.List;
 

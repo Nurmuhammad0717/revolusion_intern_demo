@@ -5,8 +5,8 @@ import org.mapstruct.MappingConstants;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.ReportingPolicy;
 import uz.pdp.revolusion_intern_demo.entity.Hotel;
-import uz.pdp.revolusion_intern_demo.payload.HotelCrudDTO;
-import uz.pdp.revolusion_intern_demo.payload.HotelDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.HotelCrudDTO;
+import uz.pdp.revolusion_intern_demo.dto.HotelDTO;
 
 import java.util.List;
 

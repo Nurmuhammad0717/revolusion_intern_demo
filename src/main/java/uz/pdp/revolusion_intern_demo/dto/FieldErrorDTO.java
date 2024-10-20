@@ -1,4 +1,4 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class TokenDTO {
+public class FieldErrorDTO {
 
-    private String token;
+    private String field;
 
-    private UserDTO userDTO;
+    private String message;
 
 }

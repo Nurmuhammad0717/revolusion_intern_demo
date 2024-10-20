@@ -1,5 +1,6 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto.crudDTOs;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,10 @@ import lombok.NoArgsConstructor;
 @Data
 public class CodeDTO {
 
+    @NotNull
     private String email;
 
+    @NotNull
     private Integer code;
 
 }

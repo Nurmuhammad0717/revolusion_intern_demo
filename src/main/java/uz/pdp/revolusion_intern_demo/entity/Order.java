@@ -19,10 +19,10 @@ import java.util.Date;
 public class Order extends AbsLongEntity {
 
     @ManyToOne
-    private User userId;
+    private User user;
 
     @ManyToOne
-    private Room roomId;
+    private Room room;
 
     private Date startDate;
 

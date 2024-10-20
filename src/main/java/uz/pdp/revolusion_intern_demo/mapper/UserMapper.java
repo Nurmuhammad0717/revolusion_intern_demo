@@ -5,8 +5,8 @@ import org.mapstruct.MappingConstants;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.ReportingPolicy;
 import uz.pdp.revolusion_intern_demo.entity.User;
-import uz.pdp.revolusion_intern_demo.payload.UserDTO;
-import uz.pdp.revolusion_intern_demo.payload.UserUpdateDTO;
+import uz.pdp.revolusion_intern_demo.dto.UserDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.UserUpdateDTO;
 
 
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE, componentModel = MappingConstants.ComponentModel.SPRING)

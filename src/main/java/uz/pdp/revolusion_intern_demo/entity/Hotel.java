@@ -15,7 +15,6 @@ public class Hotel extends AbsLongEntity {
 
     private String name;
 
-    @Column(unique = true)
     private String address;
 
     @Column(unique = true)

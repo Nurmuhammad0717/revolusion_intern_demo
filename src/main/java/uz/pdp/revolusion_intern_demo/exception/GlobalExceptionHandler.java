@@ -2,7 +2,7 @@ package uz.pdp.revolusion_intern_demo.exception;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import uz.pdp.revolusion_intern_demo.payload.ApiResult;
+import uz.pdp.revolusion_intern_demo.dto.ApiResult;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {

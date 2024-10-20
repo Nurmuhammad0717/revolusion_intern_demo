@@ -14,7 +14,7 @@ import uz.pdp.revolusion_intern_demo.enums.RoomTypeEnum;
 public class Room extends AbsLongEntity {
 
     @ManyToOne
-    private Hotel hotelId;
+    private Hotel hotel;
 
     private Boolean isBusy;
 

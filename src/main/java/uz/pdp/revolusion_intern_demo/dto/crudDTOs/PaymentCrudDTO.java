@@ -1,5 +1,6 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto.crudDTOs;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,10 +16,20 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PaymentCrudDTO implements Serializable {
+    @NotNull
     private Long orderId;
+
+    @NotNull
     private Date orderStartDate;
+
+    @NotNull
     private Date orderEndDate;
+
+    @NotNull
     private OrderStatusEnum orderOrderStatus;
+
     private String orderDescription;
+
+    @NotNull
     private Double amount;
 }

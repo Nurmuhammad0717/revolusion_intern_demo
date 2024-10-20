@@ -1,4 +1,4 @@
-package uz.pdp.revolusion_intern_demo.payload;
+package uz.pdp.revolusion_intern_demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,9 +12,10 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RateCrudDTO implements Serializable {
-    private Long userIdId;
-    private Long roomIdId;
+public class RateDTO implements Serializable {
+    private Long id;
+    private Long userId;
+    private Long roomId;
     private String description;
     private Integer rate;
 }

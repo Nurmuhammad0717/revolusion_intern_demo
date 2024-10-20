@@ -1,7 +1,11 @@
 package uz.pdp.revolusion_intern_demo.service;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
-import uz.pdp.revolusion_intern_demo.payload.*;
+import uz.pdp.revolusion_intern_demo.dto.*;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.CodeDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.ResetPasswordDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.SignInDTO;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.SignUpDTO;
 
 public interface AuthService extends UserDetailsService {
 

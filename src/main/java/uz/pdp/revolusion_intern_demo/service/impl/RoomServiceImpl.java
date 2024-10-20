@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 import uz.pdp.revolusion_intern_demo.entity.Room;
 import uz.pdp.revolusion_intern_demo.exception.RestException;
 import uz.pdp.revolusion_intern_demo.mapper.RoomMapper;
-import uz.pdp.revolusion_intern_demo.payload.ApiResult;
-import uz.pdp.revolusion_intern_demo.payload.RoomCrudDTO;
-import uz.pdp.revolusion_intern_demo.payload.RoomDTO;
+import uz.pdp.revolusion_intern_demo.dto.ApiResult;
+import uz.pdp.revolusion_intern_demo.dto.crudDTOs.RoomCrudDTO;
+import uz.pdp.revolusion_intern_demo.dto.RoomDTO;
 import uz.pdp.revolusion_intern_demo.repository.RoomRepository;
 import uz.pdp.revolusion_intern_demo.service.RoomService;
 
@@ -34,9 +34,9 @@ public class RoomServiceImpl implements RoomService {
         Room room = roomRepository.findById(id)
                 .orElseThrow(() -> RestException.notFound("Any room with id " + id));
 
-        RoomDTO hotelDTO = roomMapper.toDto(room);
+        RoomDTO roomDTO = roomMapper.toDto(room);
 
-        return ApiResult.success(hotelDTO);
+        return ApiResult.success(roomDTO);
     }
 
     @Override
@@ -46,9 +46,9 @@ public class RoomServiceImpl implements RoomService {
 
         Room saved = roomRepository.save(room);
 
-        RoomDTO hotelDTO = roomMapper.toDto(saved);
+        RoomDTO roomDTO = roomMapper.toDto(saved);
 
-        return ApiResult.success(hotelDTO);
+        return ApiResult.success(roomDTO);
     }
 
     @Override
@@ -59,9 +59,9 @@ public class RoomServiceImpl implements RoomService {
 
         roomMapper.update(room, crudDTO);
 
-        RoomDTO hotelDTO = roomMapper.toDto(room);
+        RoomDTO roomDTO = roomMapper.toDto(room);
 
-        return ApiResult.success(hotelDTO);
+        return ApiResult.success(roomDTO);
     }
 
     @Override
@@ -71,4 +71,7 @@ public class RoomServiceImpl implements RoomService {
 
         return ApiResult.success("Deleted room with id " + id);
     }
+
+
+
 }
